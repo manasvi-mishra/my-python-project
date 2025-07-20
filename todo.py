@@ -17,7 +17,7 @@ def add_task():
 
 def view_tasks():
     if not tasks:
-        print("📭 No tasks to show.")
+        print("No tasks to show.")
         return
     print("Your Tasks:")
     for i, task in enumerate(tasks, 1):
