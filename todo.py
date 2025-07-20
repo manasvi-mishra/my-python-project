@@ -4,7 +4,7 @@
 tasks = []
 
 def show_menu():
-    print("\n🎯 TO-DO LIST")
+    print( TO-DO LIST")
     print("1. Add Task")
     print("2. View Tasks")
     print("3. Mark Task as Done")
@@ -21,14 +21,14 @@ def view_tasks():
         return
     print("Your Tasks:")
     for i, task in enumerate(tasks, 1):
-        status = "done"if task["done"] else "❌"
+        status = "done"if task["done"] else "not done"
         print(f"{i}. {task['task']} {status}")
 
 def mark_done():
     view_tasks()
     if tasks:
         try:
-            num = int(input("🔢 Enter task number to mark as done: "))
+            num = int(input("Enter task number to mark as done: "))
             if 1 <= num <= len(tasks):
                 tasks[num - 1]["done"] = True
                 print(" Task is done")
@@ -49,7 +49,7 @@ while True:
     elif choice == '3':
         mark_done()
     elif choice == '4':
-        print("👋 Goodbye, Manasvi!")
+        print("Goodbye, Manasvi!")
         break
     else:
         print("❌ Invalid option. Try again.")
