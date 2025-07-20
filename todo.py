@@ -52,4 +52,4 @@ while True:
         print("Goodbye, Manasvi!")
         break
     else:
-        print("❌ Invalid option. Try again.")
+        print("Invalid option. Try again.")
